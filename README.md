@@ -1,7 +1,9 @@
 # Canvas Inbox Redesign
 
-This repo has some front-end implementation for the redesign of the Canvas inbox.
+This repo has some front-end implementation for the redesign of the Canvas inbox. 
+
 Features currently included are:
+* Changing status
 
 ## Installation
 
