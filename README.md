@@ -5,14 +5,8 @@ This repo has some front-end implementation for the redesign of the Canvas inbox
 Features currently included are:
 * Changing status
 
-## Installation
+## Running code
 
-This project requires [NodeJS](https://nodejs.org/en/) to run. Once the repo has been cloned cd into the project folder and run:
+Use git clone to clone the repository onto your machine. 
 
-```bash
-npm install
-```
-
-```bash
-npm start
-```
+Double click on index.html to launch app in a browser.
