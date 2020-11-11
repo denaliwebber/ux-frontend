@@ -126,7 +126,62 @@
   color: white;
 }
 
-.fa-stack {
+#user-status {
   margin-top: 68px;
   margin-left: -10px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 55px;
+  background-color: #e3e3e3;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  left: 95%;
+  top: -1px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  margin-left: -30px;
+}
+
+.change {
+  display: flex;
+  flex-direction: row;
+}
+
+.symbol {
+  padding-left: 5px;
+  padding-top: 5px;
 }
