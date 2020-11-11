@@ -9,4 +9,6 @@ Features currently included are:
 
 Use git clone to clone the repository onto your machine. 
 
-Double click on index.html to launch app in a browser.
+Double click on index.html to launch app in a browser. 
+
+To see any changes when developing refresh the browser page (CTRL + R)
