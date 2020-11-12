@@ -6,27 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Canvas Inbox</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div id='navigation-pane'>
-    <img id='usf-logo' src='usf-logo.jpg'>
-    <hr style="width:100%;color:white;background-color:white;text-align:left;margin-left:0">
-    <div id='book-container'>
-      <img id='book-icon' src='books.png'>
-      <p class='section-titles'>Courses</p>
+  <div id='panes'>
+    <div id='navigation-pane'>
+      <img id='usf-logo' src='usf-logo.jpg'>
+      <hr style="width:100%;color:white;background-color:white;text-align:left;margin-left:0">
+      <div id='book-container'>
+        <img id='book-icon' src='books.png'>
+        <p class='section-titles'>Courses</p>
+      </div>
+      <div id='dashboard-container'>
+        <img id='dashboard-icon' src='dashboard.png'>
+        <p class='section-titles'>Dashboard</p>
+      </div>
+      <div id='inbox-container'>
+        <img id='inbox-icon' src='inbox.png'>
+        <p class='highlighted-section-title'>Inbox</p>
+      </div>
+      <div id='calendar-container'>
+        <img id='calendar-icon' src='calendar.png'>
+        <p class='section-titles'>Calendar</p>
+      </div>
     </div>
-    <div id='dashboard-container'>
-      <img id='dashboard-icon' src='dashboard.png'>
-      <p class='section-titles'>Dashboard</p>
-    </div>
-    <div id='inbox-container'>
-      <img id='inbox-icon' src='inbox.png'>
-      <p class='highlighted-section-title'>Inbox</p>
-    </div>
-    <div id='calendar-container'>
-      <img id='calendar-icon' src='calendar.png'>
-      <p class='section-titles'>Calendar</p>
+    <div id='top-pane-container'>
+      <p id='title'>Inbox</p>
+      <div id='searchbar-placeholder'>
+        <i id='search-icon' class="fa fa-search"></i>
+        <p id='search-text'>Search messages...</p>
+      </div>
+      <img id='user-profile' src='user.jpg'>
+      <div class='popup'>
+        <span class="fa-stack" id='user-status' onclick="onClick()">
+          <i class="fa fa-circle fa-stack-2x status-background-green"></i>
+          <i class="fa fa-check fa-stack-1x icon-color"></i>
+        </span>
+        <span class="popuptext" id="popup-content">
+          <div id='go-online' class='change'>
+            <span class="fa-stack symbol">
+              <i class="fa fa-circle fa-stack-2x status-background-green"></i>
+              <i class="fa fa-check fa-stack-1x icon-color"></i>
+            </span>
+            <p id='online-title'>Online</p>
+          </div>
+          <div id='go-busy' class='change'>
+            <span class="fa-stack symbol">
+              <i class="fa fa-circle fa-stack-2x status-background-red"></i>
+              <i class="fa fa-circle fa-stack-1x icon-color"></i>
+            </span>
+            <p id='busy-title'>Busy</p>
+          </div>
+          <div id='go-offline' class='change'>
+            <span class="fa-stack symbol">
+              <i class="fa fa-circle fa-stack-2x status-background-grey"></i>
+              <i class="fa fa-times-circle fa-stack-1x icon-color"></i>
+            </span>
+            <p id='offline-title'>Offline</p>
+          </div>
+        </span>
+      </div>
     </div>
   </div>
 </body>
