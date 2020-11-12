@@ -3,7 +3,7 @@
 }
 
 #navigation-pane {
-  height: 640px;
+  height: 660px;
   width: 150px;
   background-color: #004D15;
   display: flex;
@@ -159,8 +159,9 @@
 }
 
 .message {
-  font-size: 18px;
-  text-align: center;
+  position: relative;
+  font-size: 16px;
+  vertical-align: 30%;
 }
 
 .box {
@@ -171,7 +172,6 @@
   left: 2%;
   background-color: #DFDFDF;
   top:20%;
-
 }
 
 .view-contact-button {
