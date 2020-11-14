@@ -82,3 +82,15 @@ document.addEventListener('click', function(event) {
     popup.style.visibility = 'hidden'
   }
 })
+
+function closeContacts() {
+  console.log('Close contacts')
+  document.getElementById('contact-pane').style.width = "0"
+  document.getElementById('contact-nav').style.marginLeft = "0"
+}
+
+function openContacts() {
+  console.log('Open contacts')
+  document.getElementById('contact-pane').style.width = "250px"
+  document.getElementById('contact-nav').style.marginLeft = "250px"
+}
