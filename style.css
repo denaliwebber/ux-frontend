@@ -150,7 +150,7 @@
 .inbox-message {
   border: 1px solid black;
   height: 65px;
-  width: 50%;
+  width: 85%;
   background-color: #F1F1F1;
   text-align: left;
   font-size: 22px;
@@ -158,12 +158,13 @@
   position: absolute;
   left: 175px;
   right: 100px;
+  transition: 0.5s;
 }
 
 .inbox-message-long {
   border: 1px solid black;
   height: 65px;
-  width: 50%;
+  width: 85%;
   background-color: #F1F1F1;
   text-align: left;
   text-indent: 85px;
@@ -172,6 +173,7 @@
   left: 175px;
   right: 100px;
   top: 148px;
+  transition: 0.5s;
 }
 
 .message {
@@ -187,7 +189,7 @@
   position: absolute;
   left: 2%;
   background-color: #DFDFDF;
-  top:20%;
+  top: 20%;
 }
 
 .view-contact-button {
@@ -196,31 +198,6 @@
   position: absolute;
   top: 17%;
   left: 50%;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 55px;
-  background-color: #e3e3e3;
-  color: black;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  left: 95%;
-  top: -1px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
 
 .popup {

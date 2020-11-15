@@ -83,14 +83,25 @@ document.addEventListener('click', function(event) {
   }
 })
 
+const messages = document.querySelectorAll('.inbox-message')
+const message = document.querySelector('.inbox-message-long')
+const pane = document.getElementById('contact-pane')
+const nav = document.getElementById('contact-nav')
+
 function closeContacts() {
-  console.log('Close contacts')
-  document.getElementById('contact-pane').style.width = "0"
-  document.getElementById('contact-nav').style.marginLeft = "0"
+  pane.style.width = "0"
+  nav.style.marginLeft = "0"
+  for (let i = 0; i < messages.length; i++) {
+    messages[i].style.width = '85%'
+  }
+  message.style.width = '85%'
 }
 
 function openContacts() {
-  console.log('Open contacts')
-  document.getElementById('contact-pane').style.width = "250px"
-  document.getElementById('contact-nav').style.marginLeft = "250px"
+  pane.style.width = "250px"
+  nav.style.marginLeft = "250px"
+  for (let i = 0; i < messages.length; i++) {
+    messages[i].style.width = '65%'
+  }
+  message.style.width = '65%'
 }
