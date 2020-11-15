@@ -82,3 +82,26 @@ document.addEventListener('click', function(event) {
     popup.style.visibility = 'hidden'
   }
 })
+
+const messages = document.querySelectorAll('.inbox-message')
+const message = document.querySelector('.inbox-message-long')
+const pane = document.getElementById('contact-pane')
+const nav = document.getElementById('contact-nav')
+
+function closeContacts() {
+  pane.style.width = "0"
+  nav.style.marginLeft = "0"
+  for (let i = 0; i < messages.length; i++) {
+    messages[i].style.width = '85%'
+  }
+  message.style.width = '85%'
+}
+
+function openContacts() {
+  pane.style.width = "250px"
+  nav.style.marginLeft = "250px"
+  for (let i = 0; i < messages.length; i++) {
+    messages[i].style.width = '65%'
+  }
+  message.style.width = '65%'
+}

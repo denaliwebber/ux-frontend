@@ -67,52 +67,138 @@
           </div>
         </span>
       </div>
+      <p id='contact-title'>Contacts</p>
+      <div id='contactsearch-placeholder'>
+        <i id='search-icon' class="fa fa-search"></i>
+        <p id='search-text'>Search contacts...</p>
+      </div>
+    </div>
+    <div id='contact-pane' class='sidebar'>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContacts()">&times;</a>
+      <div class='user'>
+        <img src='user1.jpg'>
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x status-background-red"></i>
+          <i class="fa fa-circle fa-stack-1x icon-color"></i>
+        </span>
+        <div class='info'>
+          <h1>Jessica Smith</h1>
+          <h2> TA - CS 212-01</h2>
+        </div>
+      </div>
+      <div class='user'>
+        <img src='user2.jpg'>
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x status-background-green"></i>
+          <i class="fa fa-check fa-stack-1x icon-color"></i>
+        </span>
+        <div class='info'>
+          <h1>Cynthia Perry</h1>
+          <h2> Student - CS 212-01</h2>
+        </div>
+      </div>
+      <div class='user'>
+        <img src='user3.jpg'>
+        <span class="fa-stack symbol">
+          <i class="fa fa-circle fa-stack-2x status-background-grey"></i>
+          <i class="fa fa-times-circle fa-stack-1x icon-color"></i>
+        </span>
+        <div class='info'>
+          <h1>Megan Davis</h1>
+          <h2> Student - Math 202-01</h2>
+        </div>
+      </div>
+      <div class='user'>
+        <img src='user4.jpg'>
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x status-background-green"></i>
+          <i class="fa fa-check fa-stack-1x icon-color"></i>
+        </span>
+        <div class='info'>
+          <h1>Lindsay Beckett</h1>
+          <h2> Student - CS 212-01</h2>
+        </div>
+      </div>
+      <div class='user'>
+        <img src='user5.jpg'>
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x status-background-green"></i>
+          <i class="fa fa-check fa-stack-1x icon-color"></i>
+        </span>
+        <div class='info'>
+          <h1>Cindy Perry</h1>
+          <h2> Student - CS 245-01</h2>
+        </div>
+      </div>
+      <div class='user'>
+        <img src='user6.jpg'>
+        <span class="fa-stack symbol">
+          <i class="fa fa-circle fa-stack-2x status-background-grey"></i>
+          <i class="fa fa-times-circle fa-stack-1x icon-color"></i>
+        </span>
+        <div class='info'>
+          <h1>Mandy Moore</h1>
+          <h2> TA - CS 245-01</h2>
+        </div>
+      </div>
+      <div class='user'>
+        <img src='user7.jpg'>
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x status-background-green"></i>
+          <i class="fa fa-check fa-stack-1x icon-color"></i>
+        </span>
+        <div class='info'>
+          <h1>Nick Williams</h1>
+          <h2> Associate Professor - Ethics 107</h2>
+        </div>
+      </div>
     </div>
   </div>
+  <div id='inbox-messages'>
+    <div id='contact-nav'>
+      <button class="openbtn" onclick="openContacts()">☰ View Contacts</button>
+    </div>
+    <div class='inbox-message-long'>
+      Nick Williams
+      <p class='message'>Hi, I wanted to reach out to all students in the course about their...</p>
+      <div class='box'></div>
+    </div>
 
-  <button class="view-contact-button">View Contacts</button>
+    <div class='inbox-message' style="top:223px;">
+      Cynthia Perry
+      <p class='message' >Study group at the library - Tomorrow’s study session we
+      will discuss..</p>
+      <div class='box'></div>
+    </div>
 
-<div class='inbox-message-long'>
-  Nick Williams
-  <p class='message'>Hi, I wanted to reach out to all students in the course about their...</p>
-  <div class='box'></div>
-</div>
+    <div class='inbox-message' style="top:298px;">
+      Jessica, Ryan, Tim..
+      <p class='message'>Tomorrow’s class - 9/30</p>
+      <div class='box'></div>
+    </div>
 
-<div class='inbox-message' style="top:223px;">
-  Cynthia Perry
-  <p class='message' >Study group at the library - Tomorrow’s study session we
-  will discuss..</p>
-  <div class='box'></div>
-</div>
+    <div class='inbox-message' style="top:375px;">
+      Jessica Smith
+      <p class='message'>Friday’s Lab Session</p>
+      <div class='box'></div>
+    </div>
 
-<div class='inbox-message' style="top:298px;">
-  Jessica, Ryan, Tim..
-  <p class='message'>Tomorrow’s class - 9/30</p>
-  <div class='box'></div>
-</div>
+    <div class='inbox-message' style="top:450px;">
+      Lindsay, Math 202 Students <p class='message'>Exam #1 Study Session</p>
+      <div class='box'></div>
+    </div>
 
-<div class='inbox-message' style="top:375px;">
-  Jessica Smith 
-  <p class='message'>Friday’s Lab Session</p>
-  <div class='box'></div>
-</div>
+    <div class='inbox-message' style="top:525px;">
+      Megan, Danny, Ar..
+      <p class='message'>Who’s free tomorrow to review for the exam on friday? </p>
+      <div class='box'></div>
+    </div>
 
-<div class='inbox-message' style="top:450px;">
-  Lindsay, Math 202 Students <p class='message'>Exam #1 Study Session</p>
-  <div class='box'></div>
-</div>
-
-<div class='inbox-message' style="top:525px;">
-  Megan, Danny, Ar..
-  <p class='message'>Who’s free tomorrow to review for the exam on friday? </p>
-  <div class='box'></div>
-</div>
-
-<div class='inbox-message' style="top:605px;">
-  Arthur Parker <p class='message'>I missed class today, can you meet in the library for a review.</p>
-  <div class='box'></div>
-</div>
-
+    <div class='inbox-message' style="top:605px;">
+      Arthur Parker <p class='message'>I missed class today, can you meet in the library for a review.</p>
+      <div class='box'></div>
+    </div>
+  </div>
 </body>
 
 
