@@ -4,6 +4,7 @@ This repo has some front-end implementation for the redesign of the Canvas inbox
 
 Features currently included are:
 * Changing status
+* View and close the contact pane
 
 ## Running code
 
