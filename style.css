@@ -154,7 +154,7 @@
   background-color: #F1F1F1;
   text-align: left;
   font-size: 22px;
-  text-indent: 85px;
+  text-indent: 10%;
   position: absolute;
   left: 175px;
   right: 100px;
@@ -167,7 +167,7 @@
   width: 85%;
   background-color: #F1F1F1;
   text-align: left;
-  text-indent: 85px;
+  text-indent: 10%;
   font-size: 22px;
   position: absolute;
   left: 175px;
@@ -179,6 +179,7 @@
 .message {
   position: relative;
   font-size: 16px;
+  text-indent: 10%;
   vertical-align: 30%;
 }
 
@@ -190,6 +191,17 @@
   left: 2%;
   background-color: #DFDFDF;
   top: 20%;
+}
+
+.favorites-icon {
+	position: absolute;
+	width: 32px;
+	height: 40px;
+	left: 6%;
+
+	background: #F1F1F1;
+	border: 0;
+	box-sizing: border-box;
 }
 
 .view-contact-button {
