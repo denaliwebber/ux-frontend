@@ -42,6 +42,7 @@ const userstatus = document.querySelector('#user-status')
 online.addEventListener('click', function (event) {
   popup.style.visibility = 'hidden'
   userstatus.innerHTML = "<i class='fa fa-circle fa-stack-2x status-background-green'></i><i class='fa fa-check fa-stack-1x icon-color'></i>"
+  userstatus.title = 'Online'
 })
 
 online.addEventListener('mouseover', function (event) {
@@ -55,6 +56,7 @@ online.addEventListener('mouseout', function (event) {
 busy.addEventListener('click', function (event) {
   popup.style.visibility = 'hidden'
   userstatus.innerHTML = "<i class='fa fa-circle fa-stack-2x status-background-red'></i><i class='fa fa-circle fa-stack-1x icon-color'></i>"
+  userstatus.title = 'Busy'
 })
 
 busy.addEventListener('mouseover', function (event) {
@@ -68,6 +70,7 @@ busy.addEventListener('mouseout', function (event) {
 offline.addEventListener('click', function (event) {
   popup.style.visibility = 'hidden'
   userstatus.innerHTML = "<i class='fa fa-circle fa-stack-2x status-background-grey'></i><i class='fa fa-times-circle fa-stack-1x icon-color'></i>"
+  userstatus.title = 'Offline'
 })
 
 offline.addEventListener('mouseover', function (event) {
