@@ -88,12 +88,15 @@ document.addEventListener('click', function(event) {
 
 // Handles shortening message width when contact pane is opened and width of contact pane
 const messages = document.querySelectorAll('.inbox-message')
+const stars = document.querySelectorAll('.favorites-icon')
 const message = document.querySelector('.inbox-message-long')
 const longMessage = document.querySelector('#long-message')
+const messageContent = document.querySelectorAll('.message')
 // full contact pane
 const pane = document.getElementById('contact-pane')
 // closing button
 const nav = document.getElementById('contact-nav')
+const recepients = document.querySelectorAll('.recepient')
 
 function closeContacts() {
   pane.style.width = "0"
@@ -103,6 +106,16 @@ function closeContacts() {
   }
   message.style.width = '85%'
   longMessage.innerHTML = 'Hi, I wanted to reach out to all students in the course about their midterm essay plan.  I will be conducting 1-1 meetings next week, please...'
+  longMessage.style.left = '0%'
+  for (let i = 0; i < stars.length; i++) {
+    stars[i].style.left = '6%'
+  }
+  for (let i = 0; i < messageContent.length; i++) {
+    messageContent[i].style.left = '0%'
+  }
+  for (let i = 0; i < recepients.length; i++) {
+    recepients[i].style.paddingLeft = '0%'
+  }
 }
 
 function openContacts() {
@@ -112,5 +125,15 @@ function openContacts() {
     messages[i].style.width = '65%'
   }
   message.style.width = '65%'
-  longMessage.innerHTML = 'Hi, I wanted to reach out to all students in the course about their midterm essay plan.  I will be conducting 1-1...'
+  longMessage.innerHTML = 'Hi, I wanted to reach out to all students in the course about their midterm essay plan.  I will be conducting...'
+  longMessage.style.left = '3%'
+  for (let i = 0; i < stars.length; i++) {
+    stars[i].style.left = '8%'
+  }
+  for (let i = 0; i < messageContent.length; i++) {
+    messageContent[i].style.left = '3%'
+  }
+  for (let i = 0; i < recepients.length; i++) {
+    recepients[i].style.paddingLeft = '3%'
+  }
 }
