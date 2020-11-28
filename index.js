@@ -1,3 +1,4 @@
+// Handles the right pane hovering
 const books = document.querySelector('#book-container')
 const dashboard = document.querySelector('#dashboard-container')
 const calendar = document.querySelector('#calendar-container')
@@ -26,6 +27,7 @@ calendar.addEventListener('mouseout', function (event) {
   calendar.style.backgroundColor = '#005c02'
 })
 
+// Handles the status popup
 const popup = document.getElementById("popup-content")
 
 function onClick() {
@@ -76,6 +78,7 @@ offline.addEventListener('mouseout', function (event) {
   offline.style.backgroundColor = 'white'
 })
 
+// Handles when user clicks outside status popup window
 document.addEventListener('click', function(event) {
   var isClickInside = userstatus.contains(event.target)
   if (!isClickInside) {
@@ -83,9 +86,13 @@ document.addEventListener('click', function(event) {
   }
 })
 
+// Handles shortening message width when contact pane is opened and width of contact pane
 const messages = document.querySelectorAll('.inbox-message')
 const message = document.querySelector('.inbox-message-long')
+const longMessage = document.querySelector('#long-message')
+// full contact pane
 const pane = document.getElementById('contact-pane')
+// closing button
 const nav = document.getElementById('contact-nav')
 
 function closeContacts() {
@@ -95,6 +102,7 @@ function closeContacts() {
     messages[i].style.width = '85%'
   }
   message.style.width = '85%'
+  longMessage.innerHTML = 'Hi, I wanted to reach out to all students in the course about their midterm essay plan.  I will be conducting 1-1 meetings next week, please...'
 }
 
 function openContacts() {
@@ -104,4 +112,5 @@ function openContacts() {
     messages[i].style.width = '65%'
   }
   message.style.width = '65%'
+  longMessage.innerHTML = 'Hi, I wanted to reach out to all students in the course about their midterm essay plan.  I will be conducting 1-1...'
 }
